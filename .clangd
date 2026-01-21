@@ -1,0 +1,13 @@
+CompileFlags:
+  Remove:
+    - "-forward-unknown-to-host-compiler"
+    - "--expt-relaxed-constexpr"
+    - "--generate-code=*"
+    - "-Xcompiler*"
+    - "-Xptxas*"
+    - "-ccbin*"
+    - "--compiler-bindir*"
+  Add:
+    - "--cuda-path=/app/apps/cuda/11.6.2"
+    - "--cuda-gpu-arch=sm_80"
+    - "-I/app/apps/cuda/11.6.2/include"
