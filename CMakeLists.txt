@@ -19,7 +19,7 @@ target_include_directories(main SYSTEM PRIVATE
 # Link cudart only if it's actually available on this node
 find_package(CUDAToolkit QUIET)
 if (CUDAToolkit_FOUND)
-    target_link_libraries(main PRIVATE CUDA::cudart)
+  target_link_libraries(main PRIVATE CUDA::cudart)
 endif()
 
 target_compile_options(main PRIVATE
