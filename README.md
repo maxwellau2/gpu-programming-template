@@ -6,18 +6,17 @@
 ``` bash
 module load craype-accel-nvidia80
 ```
-3. write a main.cu, might need to modify cmakelist to target ur desired execuable
-4. make scripts executable
-``` bash
-cd week1_tut
-chmod +x ./config_cmake.sh
-chmod +x ./build.sh
-```
 
-5. run them
+3. write a main.cu, might need to modify cmakelist to target ur desired execuable
+
+4. run them
 ``` bash
 # only need to run once
-./config_cmake.sh
+make config-cmake
 # build/rebuild
-./build.sh
+make build
+# run
+make run
+# view output
+make view-out
 ```
